@@ -1,4 +1,4 @@
-Docker + Ubuntu-16.04 + Mysql-5.7
+Docker + Ubuntu-latest + Mysql-5.7
 
 #### parameter
 
@@ -10,23 +10,23 @@ Docker + Ubuntu-16.04 + Mysql-5.7
 #### build image
 
 ```
-$ docker build -t="leafney/ubuntu-mysql" .
+$ docker build -t="vbvntv-mysql" .
 ```
 
 #### run a default contaier
 
 ```
-$ docker run --name mysql -v /var/docker_data/mysql/data/:/var/lib/mysql -d -p 3306:3306 leafney/ubuntu-mysql
+$ docker run --name mysql -v /var/docker_data/mysql/data/:/var/lib/mysql -d -p 3306:3306 vbvntv-mysql
 ```
 
 #### run a container with new User and Password
 
 ```
-$ docker run --name mysql -v /var/docker_data/mysql/data/:/var/lib/mysql -d -p 3306:3306 -e MYSQL_ROOT_PWD=123 -e MYSQL_USER=dev -e MYSQL_USER_PWD=dev leafney/ubuntu-mysql
+$ docker run --name mysql -v /var/docker_data/mysql/data/:/var/lib/mysql -d -p 3306:3306 -e MYSQL_ROOT_PWD=123 -e MYSQL_USER=dev -e MYSQL_USER_PWD=dev vbvntv-mysql
 ```
 
 #### run a container with new Database for new User and Password
 
 ```
-$ docker run --name mysql -v /var/docker_data/mysql/data/:/var/lib/mysql -d -p 3306:3306 -e MYSQL_ROOT_PWD=123 -e MYSQL_USER=dev -e MYSQL_USER_PWD=dev -e MYSQL_USER_DB=userdb leafney/ubuntu-mysql
+$ docker run --name mysql -v /var/docker_data/mysql/data/:/var/lib/mysql -d -p 3306:3306 -e MYSQL_ROOT_PWD=123 -e MYSQL_USER=dev -e MYSQL_USER_PWD=dev -e MYSQL_USER_DB=userdb vbvntv-mysql
 ```
