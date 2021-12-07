@@ -1,4 +1,11 @@
 FROM ubuntu:latest
+# 18.04, bionic-20210930, bionic
+# 20.04, focal-20211006, focal, latest
+# 21.04, hirsute-20211107, hirsute
+# 21.10, impish-20211102, impish, rolling
+# 22.04, jammy-20211122, jammy, devel
+# 14.04, trusty-20191217, trusty
+# 16.04, xenial-20210804, xenial
 MAINTAINER tor "tor@linvx.com.br"
 
 RUN echo "deb http://cn.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse" >> /etc/apt/sources.list
