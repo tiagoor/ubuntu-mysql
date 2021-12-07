@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER leafney "babycoolzx@126.com"
+MAINTAINER tor "tor@linvx.com.br"
 
 RUN echo "deb http://cn.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse" >> /etc/apt/sources.list
 
